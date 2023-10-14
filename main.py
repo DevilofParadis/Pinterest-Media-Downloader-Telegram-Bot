@@ -8,7 +8,7 @@ from pinterest_media_downloader import PinterestMediaDownloader
 
 # initialisation
 mimetypes.init()
-TOKEN = os.environ['BOT_TOKEN']
+TOKEN = os.environ['6116413872:AAHwJ-3a2oefzMhTHsVE6ppbrirUY2K5488']
 updater = Updater(token=TOKEN, use_context=True)
 
 # Actions
@@ -58,8 +58,8 @@ def handle_bye(update, context):
 
   
 # Command Handling
-updater.dispatcher.add_handler(CommandHandler('start', handle_start))
-updater.dispatcher.add_handler(CommandHandler('help', handle_help))
+updater.dispatcher.add_handler(CommandHandler('jhatsu', handle_start))
+updater.dispatcher.add_handler(CommandHandler('pinhelp', handle_help))
 updater.dispatcher.add_handler(CommandHandler('end', handle_bye))
 
 # Message Handling 
